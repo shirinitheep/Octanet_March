@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>ExpressVPN</title>
+<style>
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 80px;
+  }
+  .content-wrapper {
+    width: 100%;
+    max-width: 1009px;
+    margin-top: 4px;
+  }
+  .section {
+    display: flex;
+    gap: 20px;
+  }
+  .image {
+    width: 90%;
+    object-fit: cover;
+    margin-top: 70px;
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    color: #000;
+  }
+  .highlight-text {
+    font-size: 90px;
+    font-weight: 800;
+    font-family: 'poppins';
+  }
+  .subhighlight-text {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'poppins';
+    margin-top: 130px;
+  }
+  .sub-text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'poppins';
+  }
+  .action-button {
+    background-color: #4eb4a7;
+    color: #fff;
+    padding: 23px 20px;
+    border-radius: 15px;
+    margin-top: 57px;
+    border: none;
+    cursor: pointer;
+  }
+  .action-button:hover{
+    background-color: #5dc9ba;
+  }
+  .flex-half {
+    flex: 1;
+  }
+  .locations-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 60px;
+    position: relative;
+
+    
+  }
+  .location-details {
+    font-size: 20px;
+    margin-top: 7px;
+    position: absolute;
+    top: 65%;
+    left: 4%;
+   
+  }
+  .location-details-1 {
+    font-size: 50px;
+    margin-top: 7px;
+    position: absolute;
+    top: 52%;
+    left: 4%;
+  }
+  .sr-only {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  @media (max-width: 991px) {
+    .content-wrapper, .section {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .text-content, .action-button, .locations-section {
+      padding: 0 20px;
+    }
+    .highlight-text {
+      font-size: 40px;
+    }
+    .locations-section {
+      font-size: 40px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="content-wrapper">
+    <section class="section top-section">
+      <div class="flex-half">
+        <img src="./assets/6587159.jpg" alt="VPN Connection Visualization" class="image">
+      </div>
+      <div class="flex-half text-content">
+        <div class="highlight-text">The VPN that just works</div>
+        <div class="sub-text">Go further with the #1 trusted leader in VPN</div>
+        <button class="action-button" onclick="alert('Get ExpressVPN clicked')">Get ExpressVPN</button>
+      </div>
+    </section>
+    <section class="section secure-access-section">
+      <div class="flex-half text-content">
+        <div class="subhighlight-text">Secure access, worldwide</div>
+        <div class="sub-text">Connect from anywhere to anywhere. Our network of high-speed servers across 94 countries</div>
+      </div>
+      <div class="flex-half">
+        <img src="./assets/img2.jpg" alt="Global Network Map" class="image">
+      </div>
+    </section>
+    <section class="section one-click-section">
+      <div class="flex-half">
+        <img src="./assets/img3.jpg" alt="One Click Connection Interface" class="image">
+      </div>
+      <div class="flex-half text-content">
+        <div class="subhighlight-text">One click to safer internet</div>
+        <div class="sub-text">Going online doesn’t have to mean being exposed. Keep your personal information more private and secure</div>
+        <button class="action-button" onclick="alert('Get ExpressVPN clicked')">Get ExpressVPN</button>
+      </div>
+    </section>
+    <section class="section everywhere-section">
+      <div class="flex-half text-content">
+        <div class="subhighlight-text">Use ExpressVPN everywhere</div>
+        <div class="sub-text">Phone, tablet, computer - no matter what devices or what devices you are using, a single ExpressVPN subscription is enough.</div>
+      </div>
+      <div class="flex-half">
+        <img src="./assets/img4.jpg" alt="VPN on Various Devices" class="image">
+      </div>
+    </section>
+  </div>
+  <section class="locations-section">
+    <img src="./assets/world.jpg" class="sr-only">
+    <div class="location-details-1">160 locations<br>94 countries</div><br>
+    <div class="location-details"><br>Ultra-fast servers around the globe</div>
+  </section>
+</div>
+<script>
+  function getExpressVPN() {
+    alert('Get ExpressVPN clicked');
+  }
+
+  document.querySelectorAll('.action-button').forEach(button => {
+    button.onclick = getExpressVPN;
+  });

@@ -1,0 +1,29 @@
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  font-family: poppins;
+}.img1{
+    width: 610px;
+    height: 611px;
+	position: absolute;
+	left: 50%;
+	top: 84px;
+}
+.main{
+	font-size: 90px;
+	position: absolute;
+	top: 94px;
+	left: 820px;
+}
+
